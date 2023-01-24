@@ -16,6 +16,7 @@
 		4D1D35F5297F7FB5008B7BC2 /* testProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D35F4297F7FB5008B7BC2 /* testProjectTests.swift */; };
 		4D1D35FF297F7FB5008B7BC2 /* testProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D35FE297F7FB5008B7BC2 /* testProjectUITests.swift */; };
 		4D1D3601297F7FB5008B7BC2 /* testProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D3600297F7FB5008B7BC2 /* testProjectUITestsLaunchTests.swift */; };
+		4D1D360E297F826D008B7BC2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1D360D297F826C008B7BC2 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4D1D35FA297F7FB5008B7BC2 /* testProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1D35FE297F7FB5008B7BC2 /* testProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testProjectUITests.swift; sourceTree = "<group>"; };
 		4D1D3600297F7FB5008B7BC2 /* testProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D1D360D297F826C008B7BC2 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4D1D35DD297F7FB3008B7BC2 /* testProjectApp.swift */,
+				4D1D360D297F826C008B7BC2 /* Storyboard.storyboard */,
 				4D1D35DF297F7FB3008B7BC2 /* Persistence.swift */,
 				4D1D35E4297F7FB3008B7BC2 /* ContentView.swift */,
 				4D1D35E6297F7FB4008B7BC2 /* Assets.xcassets */,
@@ -241,6 +244,7 @@
 			files = (
 				4D1D35EB297F7FB4008B7BC2 /* Preview Assets.xcassets in Resources */,
 				4D1D35E7297F7FB4008B7BC2 /* Assets.xcassets in Resources */,
+				4D1D360E297F826D008B7BC2 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
