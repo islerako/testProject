@@ -17,6 +17,9 @@
 		4D1D35FF297F7FB5008B7BC2 /* testProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D35FE297F7FB5008B7BC2 /* testProjectUITests.swift */; };
 		4D1D3601297F7FB5008B7BC2 /* testProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D3600297F7FB5008B7BC2 /* testProjectUITestsLaunchTests.swift */; };
 		4D1D360E297F826D008B7BC2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1D360D297F826C008B7BC2 /* Storyboard.storyboard */; };
+		4D1D36162980BFD3008B7BC2 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D36152980BFD3008B7BC2 /* HomePageView.swift */; };
+		4D1D36192980C06C008B7BC2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D1D36182980C06C008B7BC2 /* Alamofire */; };
+		4DBCCFE729822D8B002F4461 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4DBCCFE629822D8B002F4461 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		4D1D35FE297F7FB5008B7BC2 /* testProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testProjectUITests.swift; sourceTree = "<group>"; };
 		4D1D3600297F7FB5008B7BC2 /* testProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D1D360D297F826C008B7BC2 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		4D1D36152980BFD3008B7BC2 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		4D1D361B2980DA08008B7BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBCCFE729822D8B002F4461 /* SDWebImageSwiftUI in Frameworks */,
+				4D1D36192980C06C008B7BC2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +108,12 @@
 		4D1D35DC297F7FB3008B7BC2 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				4D1D361B2980DA08008B7BC2 /* Info.plist */,
 				4D1D35DD297F7FB3008B7BC2 /* testProjectApp.swift */,
 				4D1D360D297F826C008B7BC2 /* Storyboard.storyboard */,
 				4D1D35DF297F7FB3008B7BC2 /* Persistence.swift */,
 				4D1D35E4297F7FB3008B7BC2 /* ContentView.swift */,
+				4D1D36152980BFD3008B7BC2 /* HomePageView.swift */,
 				4D1D35E6297F7FB4008B7BC2 /* Assets.xcassets */,
 				4D1D35E8297F7FB4008B7BC2 /* testProject.entitlements */,
 				4D1D35E1297F7FB3008B7BC2 /* testProject.xcdatamodeld */,
@@ -154,6 +163,10 @@
 			dependencies = (
 			);
 			name = testProject;
+			packageProductDependencies = (
+				4D1D36182980C06C008B7BC2 /* Alamofire */,
+				4DBCCFE629822D8B002F4461 /* SDWebImageSwiftUI */,
+			);
 			productName = testProject;
 			productReference = 4D1D35DA297F7FB3008B7BC2 /* testProject.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +239,11 @@
 				Base,
 			);
 			mainGroup = 4D1D35D1297F7FB3008B7BC2;
+			packageReferences = (
+				4D1D36172980C06B008B7BC2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4D1D361A2980C165008B7BC2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				4DBCCFE529822D8B002F4461 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 4D1D35DB297F7FB3008B7BC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,6 +291,7 @@
 				4D1D35DE297F7FB3008B7BC2 /* testProjectApp.swift in Sources */,
 				4D1D35E5297F7FB3008B7BC2 /* ContentView.swift in Sources */,
 				4D1D35E0297F7FB3008B7BC2 /* Persistence.swift in Sources */,
+				4D1D36162980BFD3008B7BC2 /* HomePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +443,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = testProject/testProject.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testProject/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testProject/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -438,14 +460,15 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = isler.testProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -465,6 +488,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"testProject/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testProject/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -474,8 +498,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -616,6 +639,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D1D36172980C06B008B7BC2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4D1D361A2980C165008B7BC2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4DBCCFE529822D8B002F4461 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D1D36182980C06C008B7BC2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D1D36172980C06B008B7BC2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4DBCCFE629822D8B002F4461 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4DBCCFE529822D8B002F4461 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4D1D35E1297F7FB3008B7BC2 /* testProject.xcdatamodeld */ = {
